@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="it">
+<head><meta charset="utf-8"><title>Dettagli Transazione</title></head>
+<body>
+  <h1>Dettagli transazione</h1>
+  <p><b>Hash:</b> {{ tx.hash }}</p>
+  <p><b>Timestamp:</b> {{ timestamp }}</p>
+  <p><b>Blocchi confermati:</b> {{ tx.blockIndex }}</p>
+  <p><b>Fee:</b> {{ tx.fee / 1e5 if tx.fee else 0 }} XKR</p>
+  <!-- Aggiungi inputs, outputs, e altri dettagli che vuoi -->
+  <a href="{{ url_for('homepage') }}">Torna alla homepage</a>
+</body>
+</html>

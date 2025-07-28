@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="it">
+<head><meta charset="utf-8"><title>Ricerca Transazione</title></head>
+<body>
+  <h1>Inserisci hash transazione</h1>
+  <form method="post">
+    <input type="text" name="query" style="width:400px" placeholder="Inserisci hash 64 caratteri" required>
+    <button type="submit">Cerca</button>
+  </form>
+  <a href="{{ url_for('homepage') }}">Torna alla homepage</a>
+</body>
+</html>
