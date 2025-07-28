@@ -14,7 +14,7 @@ apt update && apt install -y python3 python3-venv python3-pip apache2
 
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt || pip install flask requests
+pip install flask requests
 
 # 3. CREA FILE SYSTEMD
 cat > /etc/systemd/system/mevaexplorer.service <<EOF
